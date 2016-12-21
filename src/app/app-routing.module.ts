@@ -1,12 +1,14 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import {HomeRouteComponent} from './home-route/home-route.component';
+import { HomeRouteComponent } from './home-route/home-route.component';
 import { ContactComponent } from './home-route/contact.component';
-import {BundledModule} from './bundled/bundled.module';
-import {AboutModule} from './about/about.module';
+import { BundledModule } from './bundled/bundled.module';
+import { ProjectModule } from './project/project.module';
+import { AboutModule } from './about/about.module';
 
 export function loadBundledModule() { return BundledModule; }
+export function loadProjectModule() { return ProjectModule; }
 export function loadAboutModule() { return AboutModule; }
 
 export const routes: Routes = [
@@ -19,6 +21,7 @@ export const routes: Routes = [
   {
     path: 'services', loadChildren: loadBundledModule
   },
+  { path: 'project', loadChildren: loadProjectModule },
   {
     path: 'about', loadChildren: loadAboutModule
   },
