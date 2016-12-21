@@ -22,6 +22,8 @@
         "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/magnific-popup/dist/magnific-popup.css",
         "../node_modules/animate.css/animate.min.css",
+        "../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+        "../node_modules/owl.carousel/dist/assets/owl.theme.default.css",
         "styles.less"
       ],
       "scripts": [
@@ -32,6 +34,7 @@
         "../src/assets/js/jquery.stellar.js",
         "../src/assets/js/wow.js",
         "../src/assets/js/jquery.countTo.js",
+        "../node_modules/owl.carousel/dist/owl.carousel.min.js",
         "../src/assets/js/custom.js"
       ],
       "environments": {

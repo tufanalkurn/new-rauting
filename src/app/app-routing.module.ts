@@ -17,7 +17,7 @@ export const routes: Routes = [
     path: 'contact', component: ContactComponent
   },
   {
-    path: 'bundled', loadChildren: loadBundledModule
+    path: 'services', loadChildren: loadBundledModule
   },
   {
     path: 'about', loadChildren: loadAboutModule

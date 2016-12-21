@@ -532,6 +532,559 @@ ul.social-list {float: right; padding: 0px; margin: 0px; list-style: none;
 }
 
 
+/*************** Tabs ***************/
+
+.nav-tabs {
+  border-color: #eee;
+}
+
+.nav-tabs > li > a {
+  font-weight: 600;
+  color: #666;
+  padding: 8px 14px;
+  border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+  border: 1px solid #eee;
+  border-bottom: none;
+  box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+  -o-box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.nav-tabs > li > a i {
+  margin-right: 1px;
+    padding-right: 5px;
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,.1) inset;
+  -o-box-shadow: 0 0 15px rgba(0,0,0,.1) inset;
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.1) inset;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border-color: #eee;
+  border-bottom-color: #fff;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+  box-shadow: 0 0 0 rgba(0,0,0,.1) inset;
+  -o-box-shadow: 0 0 0 rgba(0,0,0,.1) inset;
+  -moz-box-shadow: 0 0 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.1) inset;
+}
+
+.tab-content {
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 12px 16px;
+}
+
+.tab-content p {
+  margin-bottom: 15px;
+}
+
+.tab-content p:last-child {
+  margin-bottom: 0;
+}
+
+#content {
+  padding: 60px 0;
+}
+
+#content.full-sections {
+  padding: 0;
+}
+
+/*------------------------------------------*/
+/*     03 - Main Page Elements
+/*------------------------------------------*/
+
+.page-banner {
+    padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.page-banner h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page-banner p {
+  font-weight: 300;
+}
+
+ul.breadcrumbs {
+    float: right; list-style: none; padding: 0px;
+  margin-top: 15px;
+}
+
+.no-subtitle ul.breadcrumbs {
+  margin-top: 4px;
+}
+
+ul.breadcrumbs li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+    margin-left: 3px;
+  color: #999;
+  float: left;
+}
+
+ul.breadcrumbs li:before {
+    content: '/';
+  margin: 0 4px 0 2px;
+  color: #bbb;
+}
+
+ul.breadcrumbs li:first-child {
+  margin: 0;
+}
+
+ul.breadcrumbs li:first-child:before {
+    content: '';
+  margin: 0;
+}
+
+ul.breadcrumbs li a {
+  color: #666;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+
+/*************** Team Members ***************/
+
+.team-member {
+  padding: 3px;
+  position: relative;
+}
+
+.team-member .member-photo {
+  padding: 3px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.team-member .member-photo .member-name {
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+  background-color: #444;
+  z-index: 9994;
+}
+
+.team-member .member-photo .member-name span {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 1px 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.team-member .member-info {
+  padding: 15px 6px 12px 6px;
+}
+
+.team-member .member-socail {
+  //text-align: center;
+}
+
+.team-member .member-socail a i {
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+  display: inline-block;
+  background-color: #d2d2d2;
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.team-member .member-socail a.facebook:hover i {
+  background-color: #507CBE;
+}
+
+.team-member .member-socail a.twitter:hover i {
+  background-color: #63CDF1;
+}
+
+.team-member .member-socail a.gplus:hover i {
+  background-color: #F16261;
+}
+
+.team-member .member-socail a.dribbble:hover i {
+  background-color: #E46387;
+}
+
+.team-member .member-socail a.linkedin:hover i {
+  background-color: #90CADD;
+}
+
+.team-member .member-socail a.flickr:hover i {
+  background-color: #E474AF;
+}
+
+.team-member .member-socail a.instagramm:hover i {
+  background-color: #4D4F54;
+}
+
+.team-member.modern .member-info {
+  padding: 14px 0;
+}
+
+.team-member.modern .member-photo {
+  position: relative;
+  padding: 0px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.team-member.modern .member-photo img{
+  width: 100%;
+}
+
+.team-member.modern .member-photo:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% + 1px);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9993;
+  transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+  
+  
+}
+
+.team-member.modern:hover .member-photo:after {
+  opacity: 0.5;
+  width: 100%;
+    height: 100%;
+}
+
+.team-member.modern .progress {
+  height: 3px;
+  border-width: 2px;
+  margin-bottom: 6px;
+}
+
+.team-member.modern .progress-label {
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 700;
+}
+
+.team-member.modern .progress span {
+  display: none;
+}
+
+.team-member.modern .member-socail {
+  margin-top: 15px;
+}
+
+.team-member.modern .member-socail a i {
+  background-color: transparent;
+  color: #666;
+}
+
+.team-member.modern .member-socail a:hover i {
+  color: #fff;
+}
+
+
+
+/*************** Heading Titles ***************/
+
+.classic-title {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+
+
+.classic-title span {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #00afd1;
+  font-weight: 400;
+}
+
+.big-title {
+  margin-bottom: 20px;
+}
+
+.big-title h1, .big-title h2 {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.big-title h1 strong, .big-title h2 strong {
+  font-weight: 400;
+}
+
+.big-title .title-desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+}
+
+.big-title h2 + .title-desc, .big-title h1 + .title-desc {
+  margin-top: 4px;
+}
+
+/*************** Toggles & Accordion ***************/
+
+.panel-default > .panel-heading {
+  background-color: #fff;
+}
+
+.panel-group .panel {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.panel-default {
+  border-color: #e8e8e8;
+}
+
+.panel-body {
+  padding: 4px 15px 10px 15px;
+}
+
+.panel-heading {
+  padding: 0;
+}
+
+.panel-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.panel-title a {
+  position: relative;
+  display: block;
+  padding: 6px 12px;
+  background-color: #fff;
+  box-shadow: none;
+  -o-box-shadow: none;
+  -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.panel-title a.collapsed {
+  color: #444;
+  box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+  -o-box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.04) inset;
+}
+
+.panel-title a.collapsed:hover {
+  color: #666;
+}
+
+.panel-title a .control-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -11px;
+  transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.panel-title a.collapsed .control-icon {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.panel-title a i {
+  font-size: 1.2em;
+    padding-right: 5px;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top: none;
+}
+
+
+
+/*************** Dropcaps ***************/
+
+.dropcap {
+  display: block;
+  float: left;
+  font-size: 40px;
+  line-height: 34px;
+  color: #444;
+  margin: 6px 8px 0 0;
+}
+
+.dropcap.border-dropcap {
+  border: 2px solid #444;
+  width: 46px;
+  height: 46px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+  margin: 8px 12px 0 0;
+}
+
+.dropcap.bg-dropcap {
+  background-color: #444;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+  margin: 8px 12px 0 0;
+}
+
+.dropcap.circle-dropcap {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* progress bar */
+.panel-title a {
+    color: #00afd1;
+}
+.panel-title a:hover {
+    color: #00afd1;
+    text-decoration: none;
+}
+
+.skill p {
+  margin-bottom:7px;
+
+}
+
+.progress {
+  overflow: visible;
+  height: 18px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.progress-bar {
+  float: left;
+  height: 100%;
+  background-color: #00afd1;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+  position:relative;
+}
+
+ .progress-bar-span { 
+ opacity:1;
+ position:absolute;
+ top:-5px;
+ background:#ACB2B8;
+ padding:3px 10px;
+ color:#FFF;
+ border-radius: 0px;
+ right:0px;
+    -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; 
+ }
+
+.skill:hover .progress-bar-span {
+  opacity:1;
+    -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+
 
 /*  =============   Footer Css  ==========  */
 #footer {position: relative; padding: 30px 0; width: 100%; float: left; background: #333;
