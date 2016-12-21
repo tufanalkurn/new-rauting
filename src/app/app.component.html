@@ -1,3 +1,155 @@
-<h1>
-  {{title}}
-</h1>
+<!-- Start Header Section --> 
+<header>
+  <!-- Start Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <!-- Start Contact Info -->
+          <ul class="contact-details wow fadeInLeft" data-wow-duration="1000ms">
+            <li><a href="#"><i class="fa fa-map-marker"></i> House-54/A, London, UK</a>
+            </li>
+            <li><a href="#"><i class="fa fa-envelope-o"></i> <span class="">[email&#160;protected]</span></a>
+            </li>
+            <li><a href="#"><i class="fa fa-phone"></i> +12 345 678 000</a>
+            </li>
+          </ul>
+          <!-- End Contact Info -->
+        </div>
+        <!-- .col-md-6 -->
+        <div class="col-sm-5">
+          <!-- Start Social Links -->
+          <ul class="social-list wow fadeInRight" data-wow-duration="1000ms">
+            <li>
+              <a class="facebook itl-tooltip" placement="bottom" ngbTooltip="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="twitter itl-tooltip" placement="bottom" ngbTooltip="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="instgram itl-tooltip" placement="bottom" ngbTooltip="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="skype itl-tooltip" placement="bottom" ngbTooltip="Skype" href="#"><i class="fa fa-skype"></i></a>
+            </li>
+          </ul>
+          <!-- End Social Links -->
+        </div>
+        <!-- .col-md-6 -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
+  </div>
+  <!-- .top-bar -->
+  <!-- End Top Bar -->
+
+
+  <!-- Start  Logo & Naviagtion  -->
+  <div class="navbar navbar-default navbar-top affix-top" data-spy="affix" data-offset-top="50">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Stat Toggle Nav Link For Mobiles -->
+        <button type="button" class="navbar-toggle">
+          <i class="fa fa-bars"></i>
+        </button>
+        <!-- End Toggle Nav Link For Mobiles -->
+        <a class="navbar-brand" href="">
+          <!-- <img alt="" class="wow zoomIn" data-wow-duration="1000ms" src="assets/images/logo.png"> --> LOGO
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <!-- Start Navigation List -->
+        <ul class="nav navbar-nav navbar-right wow fadeInUp" data-wow-duration="1000ms">
+          <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+          <li><a routerLink="/lazy" routerLinkActive="active">Project</a></li>
+          <li><a routerLink="/bundled" routerLinkActive="active">Our Services</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+        </ul>
+        <!-- End Navigation List -->
+      </div>
+    </div>
+  </div>
+  <!-- End Header Logo & Naviagtion -->
+
+</header>
+<!-- End Header Section -->
+
+<router-outlet></router-outlet>
+
+
+
+
+<section id="footer">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#">UX Design</a>
+            </li>
+            <li><a href="#">Interface Design</a>
+            </li>
+            <li><a href="#">Mobile Apps</a>
+            </li>
+            <li><a href="#">Web Design</a>
+            </li>
+            <li><a href="#">FreebiesCicle</a>
+            </li>               
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#">About Us</a>
+            </li>
+            <li><a href="#">Projects</a>
+            </li>
+            <li><a href="#">Our Services</a>
+            </li>
+            <li><a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h3>Find us on</h3>
+          <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h3>Email Address</h3>
+          <form action="">
+            <div class="form-group">
+              <input class="form-control" placeholder="Email Address" type="text">
+            </div>
+            <div class="form-group">
+              <input class="btn btn-block btn-warning" value="subscribe now" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+  </div>      
+  <!-- Go to Top Link -->
+  <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-chevron-up"></i></a>
+</section>
+
+<section id="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="copyright-text">
+         &copy; 2017 All right reserved. Designed and Developed by 
+          <a href="#">
+            sdfsd
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

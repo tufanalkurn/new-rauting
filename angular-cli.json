@@ -18,9 +18,22 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/magnific-popup/dist/magnific-popup.css",
+        "../node_modules/animate.css/animate.min.css",
+        "styles.less"
       ],
-      "scripts": [],
+      "scripts": [
+        "../src/assets/js/jquery-2.2.0.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+        "../src/assets/js/jquery.appear.js",
+        "../src/assets/js/jquery.stellar.js",
+        "../src/assets/js/wow.js",
+        "../src/assets/js/jquery.countTo.js",
+        "../src/assets/js/custom.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -41,7 +54,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "less",
     "prefixInterfaces": false,
     "inline": {
       "style": false,
