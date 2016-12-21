@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContentPageComponent } from './content-page.component';
 
 export const routes: Routes = [
-	{path: '', }
+	{ path: '', component: ContentPageComponent }
 ];
 
 @NgModule({
-	imports: [],
-	exports: [],
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 	providers: []
 })
 export class ContentRoutinModule {  }
