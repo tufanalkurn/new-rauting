@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { HeroesModule } from './heroes/heroes.module';
 
 import { AppComponent } from './app.component';
 import { HomeRouteComponent } from './home-route/home-route.component';
@@ -25,7 +26,8 @@ import { TestimonialComponent } from './home-route/testimonial.component';
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
