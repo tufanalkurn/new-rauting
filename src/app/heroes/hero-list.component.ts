@@ -7,16 +7,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Hero, HeroService }  from './hero.service';
 
 @Component({
-  template: `
-    <h2>HEROES</h2>
-    <ul class="items">
-      <li *ngFor="let hero of heroes | async"
-        [class.selected]="isSelected(hero)"
-        (click)="onSelect(hero)">
-        <span class="badge">{{ hero.id }}</span> {{ hero.name }}
-      </li>
-    </ul>
-  `
+  templateUrl: "./hero-list.component.html"
 })
 export class HeroListComponent implements OnInit {
   heroes: Observable<Hero[]>;
