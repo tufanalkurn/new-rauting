@@ -12,7 +12,7 @@ import { AboutModule } from './about/about.module';
 export function loadBundledModule() { return BundledModule; }
 export function loadProjectModule() { return ProjectModule; }
 export function loadContentPageModule() { return ContentPageModule; }
-export function loadHeroesModule() { return HeroesModule; }
+export function loadHeroesModule() { return HeroesModule; } 
 export function loadAboutModule() { return AboutModule; }
 
 export const routes: Routes = [
@@ -23,7 +23,9 @@ export const routes: Routes = [
   { path: 'about', loadChildren: loadAboutModule },
   { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule' },
   { path: 'content', loadChildren: loadContentPageModule },
-  { path: 'heroes', loadChildren: loadHeroesModule }
+  {
+    path: '/heroes', pathMatch: 'full'
+  },
 ];
 
 @NgModule({
