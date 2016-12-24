@@ -18,46 +18,13 @@ import { Hero, HeroService }  from './hero.service';
       <input [(ngModel)]="hero.name" placeholder="name"/>
     </div>
     <p>
-      <button (click)="gotoHeroes()">Back</button>
+      <button>Back</button>
     </p>
   </div>
   `,
-  animations: [
-    trigger('routeAnimation', [
-      state('*',
-        style({
-          opacity: 1,
-          transform: 'translateX(0)'
-        })
-      ),
-      transition(':enter', [
-        style({
-          opacity: 0,
-          transform: 'translateX(-100%)'
-        }),
-        animate('0.2s ease-in')
-      ]),
-      transition(':leave', [
-        animate('0.5s ease-out', style({
-          opacity: 0,
-          transform: 'translateY(100%)'
-        }))
-      ])
-    ])
-  ]
 })
 export class HeroDetailComponent implements OnInit {
-  @HostBinding('@routeAnimation') get routeAnimation() {
-    return true;
-  }
-
-  @HostBinding('style.display') get display() {
-    return 'block';
-  }
-
-  @HostBinding('style.position') get position() {
-    return 'absolute';
-  }
+  
 
   hero: Hero;
 
@@ -74,12 +41,12 @@ export class HeroDetailComponent implements OnInit {
       .subscribe((hero: Hero) => this.hero = hero);
   }
 
-  gotoHeroes() {
+  /*gotoHeroes() {
     let heroId = this.hero ? this.hero.id : null;
     // Pass along the hero id if available
     // so that the HeroList component can select that hero.
     this.router.navigate(['/heroes', { id: heroId, foo: 'foo' }]);
-  }
+  }*/
 }
 
 
