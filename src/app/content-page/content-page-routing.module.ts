@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContentPageComponent } from './content-page.component';
 
 export const routes: Routes = [
-	{ path: '', component: ContentPageComponent }
+	{ path: 'site-map', component: ContentPageComponent }
 ];
 
 @NgModule({
