@@ -1,22 +1,38 @@
-import { Component, OnInit } from '@angular/core';
-import { Http, HTTP_PROVIDERS } from '@angular/http';
+import { Component } from '@angular/core';
+import { HttpService } from "./services.services";
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  viewProviders: [HTTP_PROVIDERS],
+  providers: [HttpService]
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent {
 
-  constructor(http: Http) {
-    http.get('people.json')
-      // Call map on the response observable to get the parsed people object
-      .map(res => res.json())
-      // Subscribe to the observable to get the parsed people object and attach it to the
-      // component
-      .subscribe(people => this.people = people);
+  items: any[] = [];
+  asyncString = this.httpService.getData();
+
+  constructor(private httpService: HttpService) {}
+
+  onSubmit(username: string, email: string) {
+    this.httpService.sendData({username: username, email: email})
+      .subscribe(
+        data => console.log(data),
+        error => console.log(error)
+      );
   }
 
+  onGetData() {
+    this.httpService.getOwnData()
+      .subscribe(
+        data => {
+          const myArray = [];
+          for (let key in data) {
+            myArray.push(data[key]);
+          }
+          this.items = myArray;
+        }
+      );
+  }
 
 
 }
