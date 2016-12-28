@@ -8,9 +8,9 @@ export class HttpService {
 
   constructor(private http: Http) {
   }
-
+  
   getData() {
-    return this.http.get('https://angular2-course-60763.firebaseio.com/title.json')
+    return this.http.get('https://angular-app-16be7.firebaseio.com/data.json')
       .map((response: Response) => response.json());
   }
 
@@ -18,7 +18,7 @@ export class HttpService {
     const body = JSON.stringify(user);
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost/api/data.json', body, {
+    return this.http.post('https://angular-app-16be7.firebaseio.com/data.json', body, {
       headers: headers
     })
       .map((data: Response) => data.json())
@@ -26,7 +26,7 @@ export class HttpService {
   }
 
   getOwnData() {
-    return this.http.get('http://localhost/api/data.json')
+    return this.http.get('https://angular-app-16be7.firebaseio.com/data.json')
       .map((response: Response) => response.json());
   }
 
